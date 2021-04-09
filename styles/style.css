@@ -69,7 +69,7 @@ body {
 }
 
 header {
-    background-image: url("../images/Delicious-Japanese-food-sushi-meat_5120x2880.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/Delicious-Japanese-food-sushi-meat_5120x2880.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -85,25 +85,24 @@ body h1 {
 
 .header-title {
     max-width: 48%;
-    background: #fff;
     margin-left: 8.33%;
     padding: 15px;
     text-transform: uppercase;
-    color: #171717;
+    color: #f39809;
     letter-spacing: 0.179487em;
     font-size: 2.0em;
-    line-height: 1em;
+    line-height: 1.3em;
     font-weight: 400;
     font-style: normal;
 
 }
 
-.header-headline {
-    margin-top: 20px;
-    margin-left: 8.33%;
-    background: #fff;
-    padding: 15px;
-    max-width: 33%;
+.logo-image {
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .logo-text {
@@ -124,19 +123,25 @@ body h1 {
 .main-nav li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #171717;
+    color: #f39809;
 }
 
 .logo-text a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #171717;
+    color: #f39809;
     letter-spacing: 8px;
     padding-left: 30px;
 }
 
 nav {
     height: 70px;
-    background: #fff;
     padding: 30px;
+}
+
+.header-buttons {
+    margin-top: 20px;
+    margin-left: 8.33%;
+    padding: 15px;
+    max-width: 33%;
 }
