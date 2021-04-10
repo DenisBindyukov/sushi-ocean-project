@@ -68,12 +68,26 @@ body {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 3%;
 }
 
 body h1 {
     margin: 0px;
 }
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 
 /***********************
 Header Styles
@@ -189,4 +203,72 @@ Button Styles
 .button:active {
     background: #c27907;
     border: 0px solid #c27907;
+}
+
+/***********************
+Features Styles
+**************************/
+
+.position-style {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.line {
+    height: 2px;
+    background-color: #fbcf89;
+    width: 150px;
+    margin: 30px 0 30px 42px;
+}
+
+.headline-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 100%;
+}
+
+/***********************
+Food  Images Styles
+**************************/
+
+.features-icon {
+    font-size: 300%;
+    color: #fbcf89;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 85%;
+}
+
+
+.images-container {
+    list-style: none;
+    width: 100%;
+}
+
+.images-container li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.food-image {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.food-image img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.food-image img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
