@@ -376,3 +376,32 @@ Cities Styles
     word-spacing: 2px;
     font-size: 90%;
 }
+
+.info-icon {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    color: #fbcf89;
+}
+
+.cities-section {
+    background-color: #f4eded;
+}
+
+.float-clearing {
+    zoom: 1;
+}
+
+.float-clearing:after {
+    /*Блок предназначен для очистки float*/
+    zoom: 1;
+    content: " ";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.position-line {
+    margin-left: 45%;
+}
