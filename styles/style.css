@@ -89,6 +89,16 @@ section h2 {
     margin-bottom: 30px;
 }
 
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 90%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
 /***********************
 Header Styles
 **************************/
@@ -350,6 +360,19 @@ How To Order Styles
     margin-bottom: 100px;
 }
 
+
+/***********************
+Cities Styles
+**************************/
+
+
 .col-3 img {
     width: 100%;
+}
+
+.city-info {
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 90%;
 }
