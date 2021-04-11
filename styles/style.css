@@ -77,6 +77,7 @@ body h1 {
 
 section {
     padding: 100px 0;
+    clear: both;
 }
 
 section h2 {
@@ -142,10 +143,18 @@ header {
     margin-right: 30px;
 }
 
-.main-nav li a {
+.main-nav li a:link,
+.main-nav li a:visited {
     text-decoration: none;
     text-transform: uppercase;
     color: #f39809;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    opacity: 1.4;
 }
 
 .logo-text a {
@@ -196,7 +205,7 @@ Button Styles
 
 .button-more:link,
 .button-more:visited {
-    border: 1px solid #f39809;
+    border: 0px solid #f39809;
 }
 
 .button:hover,
@@ -260,7 +269,7 @@ section p {
     background: #000;
 }
 
-.food-image img{
+.food-image img {
     opacity: 0.7;
     width: 100%;
     height: auto;
@@ -271,4 +280,16 @@ section p {
 .food-image img:hover {
     opacity: 1;
     transform: scale(1.05);
+}
+
+
+/***********************
+Order  Section Styles
+**************************/
+
+.order-section-line {
+    height: 2px;
+    background-color: #fbcf89;
+    width: 150px;
+    margin: 30px 0 30px 922px;
 }
