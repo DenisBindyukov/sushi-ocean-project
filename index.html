@@ -303,31 +303,31 @@
     </div>
 </section>
 
-<section class="contact-form">
+<section class="contact-form-section">
     <h2>We will be glad to answer your questions</h2>
     <div class="line position-line"></div>
-    <div class="contact-form">
+    <div class="contact-form ">
         <div class="form-row float-clearing">
-            <div class="col-2">
+            <div class="col-6">
                 <label for="name">Имя</label>
             </div>
-            <div class="col-4">
-                <input type="text" name="name" class="name" placeholder="Inter name"/>
+            <div class="col-6">
+                <input type="text" name="name" id='name' class="name" placeholder="Inter name"/>
             </div>
         </div>
         <div class="form-row float-clearing">
-            <div class="col-2">
+            <div class="col-6">
                 <label for="email">Email</label>
             </div>
-            <div class="col-4">
-                <input type="email" name="email" class="email" placeholder="Inter email"/>
+            <div class="col-6">
+                <input type="email" id='email' name="email" class="email" placeholder="Inter email"/>
             </div>
         </div>
         <div class="form-row float-clearing">
-            <div class="col-2">
+            <div class="col-6">
                 <label for="topic">Choose a topic</label>
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <select name="topic" id="topic">
                     <option value="feedback">Feedback</option>
                     <option value="question">Question</option>
@@ -336,28 +336,68 @@
             </div>
         </div>
         <div class="form-row float-clearing">
-            <div class="col-2">
+            <div class="col-6">
                 <label for="news">Want to take news about sales</label>
             </div>
-            <div class="col-4">
-                <input type="checkbox" name="news" class="news" checked> Yes, of course
+            <div class="col-6">
+                <input type="checkbox" name="news" id="news" class="news" checked> Yes, of course
             </div>
         </div>
         <div class="form-row float-clearing">
-            <div class="col-2">
+            <div class="col-6">
                 <label for="text">Write the text of your letter</label>
             </div>
-            <div class="col-4">
-                <textarea name="text" class="text" placeholder="Enter text"></textarea>
+            <div class="col-6">
+                <textarea name="text" id="text" class="text" placeholder="Enter text"></textarea>
             </div>
         </div>
         <div class="form-row float-clearing">
-            <div class="col-4">
+            <div class="col-6">
                 <input type="submit" value="Send">
             </div>
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="footer-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Order online</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
+    <div class="footer-social-links">
+        <ul>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook">Facebook</ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram">Instagram</ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-text">
+        <p>All rights reserved</p>
+        <p>Age restrictions 0+</p>
+    </div>
+</footer>
 
 </body>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
