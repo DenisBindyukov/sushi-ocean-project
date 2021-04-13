@@ -214,7 +214,7 @@ input[type=submit] {
     color: white;
     border-radius: 150px;
     transition: background-color 0.2s, border 2s;
-
+    outline: none;
 }
 
 .button-order:link,
@@ -231,20 +231,23 @@ input[type=submit] {
 .button:hover,
 .button:active,
 input[type=submit]:hover,
-input[type=submit]:active{
+input[type=submit]:active {
     background: #c27907;
+    outline: none;
 }
 
 .button-order:hover,
 .button-order:active,
 input[type=submit]:hover,
-input[type=submit]:active{
-  border:  0px solid #f39809;
+input[type=submit]:active {
+    border: 0px solid #f39809;
+    outline: none;
 }
 
 .button-more:hover,
 .button-more:active {
     border: 1px solid #f39809;
+    outline: none;
 }
 
 
@@ -495,9 +498,18 @@ Footer Styles
 
 footer {
     text-align: center;
+    padding: 100px 0px;
+    background: #f9ba58;
+    color: white;
+    background-image: linear-gradient(rgba(145, 92, 170, 1), rgba(296, 142, 48,1));
+}
+
+footer p {
+    font-size: 70%;
 }
 
 .footer-social-links {
+    margin-bottom: 20px;
     list-style: none;
     font-size: 0.8em;
     margin-left: 30px;
@@ -506,4 +518,38 @@ footer {
 .footer-social-links li {
     display: inline-block;
     margin-right: 30px;
+}
+
+.footer-nav {
+    margin-bottom: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+    font-size: 70%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    opacity: 1;
+}
+
+.footer-social-links li a:link,
+.footer-social-links li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+    font-size: 150%;
+}
+
+.footer-social-links li a:hover,
+.footer-social-links li a:active {
+    opacity: 1;
 }
