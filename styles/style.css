@@ -18,6 +18,13 @@ body {
     /*text-rendering: optimizeLegibility оптимизирует отобожение текста в приложении*/
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .col-1 {
     width: 8.33%;
 }
@@ -130,8 +137,8 @@ header {
     text-transform: uppercase;
     color: #f39809;
     letter-spacing: 0.179487em;
-    font-size: 2.0em;
-    line-height: 1.3em;
+    font-size: 3.5vw;
+    line-height: 4.0vw;
     font-weight: 400;
     font-style: normal;
 
@@ -274,6 +281,10 @@ Features Styles
     font-size: 100%;
 }
 
+.restaurant-description p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 /***********************
 Food  Images Styles
 **************************/
@@ -501,7 +512,7 @@ footer {
     padding: 100px 0px;
     background: #f9ba58;
     color: white;
-    background-image: linear-gradient(rgba(145, 92, 170, 1), rgba(296, 142, 48,1));
+    background-image: linear-gradient(rgba(145, 92, 170, 1), rgba(296, 142, 48, 1));
 }
 
 footer p {
@@ -552,4 +563,44 @@ footer p {
 .footer-social-links li a:hover,
 .footer-social-links li a:active {
     opacity: 1;
+}
+
+
+/***********************
+Media
+ Styles
+**************************/
+
+
+@media only screen and (max-device-width: 770px) {
+
+    [class*='col-'] {
+        width: 100%;
+    }
+
+    .button-order {
+        margin-bottom: 20px;
+    }
+
+    .phone-image {
+        width: 87%;
+    }
+    .position-order-block {
+        margin-left: 0px;
+    }
+
+    .app-button img {
+        height: 68px;
+    }
+    .app-button-position {
+        padding-left: 0px;
+    }
+    .app-wrapper-block {
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
