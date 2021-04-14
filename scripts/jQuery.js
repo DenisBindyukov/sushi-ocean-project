@@ -1,6 +1,18 @@
 $(document).ready(function () {
 
-    //buttons click
+    // Add navBar
+     $('#restaurant-description').waypoint({
+        handler: function(direction) {
+            if (direction == 'down') {
+                $("nav").attr('id', "sticky-nav");
+            } else {
+                $("nav").removeAttr('id');
+            }
+        },
+        offset: 80
+    })
+
+      // Animation for click button
     $('.button-order').click(function () {
         $('html, body').animate({scrollTop: $('.how-to-order-section').offset().top}, 1000);
     });
@@ -9,19 +21,18 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: $('.restaurant-description').offset().top}, 1000);
     });
 
-    // Select
+
+    //buttons and nav links clik
     $('a[href*="#"]')
-        // Remove links that don't
         .not('[href="#"]')
         .not('[href="#0"]')
         .click(function (event) {
-            // On-page links
             if (
                 location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
                 &&
                 location.hostname == this.hostname
             ) {
-                var target = $(this.hash);
+                let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     event.preventDefault();
@@ -29,7 +40,7 @@ $(document).ready(function () {
                         scrollTop: target.offset().top
                     }, 1000, function () {
 
-                        var $target = $(target);
+                        let $target = $(target);
                         $target.focus();
                         if ($target.is(":focus")) {
                             return false;
@@ -42,5 +53,23 @@ $(document).ready(function () {
                 }
             }
         });
+
+
+   // Animation Departure of the left block with cities
+    $('#cities-section').waypoint({
+        handler: function(direction) {
+           $('.anim2').addClass('animated  animate__fadeInRight')
+        },
+        offset: 1
+    })
+
+
+    $('#restaurant-description').waypoint({
+        handler: function(direction) {
+            $('.anim1').addClass('animated  animate__fadeIn')
+        },
+        offset: 1
+    })
+
 
 })

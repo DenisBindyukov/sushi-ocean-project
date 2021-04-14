@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More Sushi</title>
 </head>
 <body>
-<header>
+<header id="header">
 
     <nav>
         <img class="logo-image" src="images/sushi-icon.png" alt="sushi">
         <p class="logo-text"><a href="#">Sushi Dan</a></p>
 
         <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Order online</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#header" >Home</a></li>
+            <li><a href="#food-images-section">Menu</a></li>
+            <li><a href="#feedback-section">About</a></li>
+            <li><a href="#contact-form-section">Order online</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
 
     <div class="header-text">
-        <h1 class="header-title">Rockin' sushi dining</h1>
+        <h1 class="header-title animate__animated animate__bounce animate__bounceInLeft">Rockin' sushi dining</h1>
         <div class="buttons">
             <a href="#" class="button button-order">Make an order</a>
             <a href="#" class="button button-more">To learn more</a>
@@ -34,7 +36,7 @@
     </div>
 </header>
 
-<section class="restaurant-description">
+<section id="restaurant-description" class="restaurant-description">
     <div>
         <div class="position-style">
             <h2>
@@ -46,7 +48,7 @@
             Each dish is an exquisite gourmet dish from our sushi chefs. All from the freshest ingredients.
         </p>
     </div>
-    <div class="col-3">
+    <div class="col-3 anim1 animate__animated animate__bounce">
         <ion-icon name="restaurant" class="features-icon"></ion-icon>
         <p>
             Rock'n Sushi is the area's best Sushi, Japanese & Thai restaurant located in the Gateway subdivision of Fort
@@ -57,7 +59,7 @@
             of the most extensive hot and cold sake lists in the area.
         </p>
     </div>
-    <div class="col-3">
+    <div class="col-3 anim1 animate__animated animate__bounce">
         <ion-icon name="trophy" class="features-icon"></ion-icon>
         <p>
             Sushi Den has been regarded as one of the premier sushi and Japanese restaurants in the United States for 34
@@ -65,7 +67,7 @@
             for 34 years.
         </p>
     </div>
-    <div class="col-3">
+    <div class="col-3 anim1 animate__animated animate__bounce">
         <ion-icon name="time" class="features-icon"></ion-icon>
         <p>
             DINNER TAKE OUT
@@ -74,7 +76,7 @@
             FRIDAY & SATURDAY: 4:30-9:00 PM
         </p>
     </div>
-    <div class="col-3">
+    <div class="col-3 anim1 animate__animated animate__bounce">
         <ion-icon name="newspaper" class="features-icon"></ion-icon>
         <p>
             Long Journey Home/Visiting Japanese Fish Market
@@ -93,7 +95,7 @@
     </div>
 </section>
 
-<section class="food-images-section">
+<section id="food-images-section" class="food-images-section">
     <ul class="images-container">
         <li>
             <figure class="food-image">
@@ -140,13 +142,13 @@
     </ul>
 </section>
 
-<section class="cities-section">
+<section id="cities-section" class="cities-section">
     <h2>
         We are located in the following cities
         <div class='line position-line'></div>
     </h2>
     <div class="float-clearing">
-        <div class="col-3">
+        <div class="col-3 anim2 animate__animated animate__bounce">
             <img src="images/kharkiv.jpg" alt="Kharkiv picture">
             <h3>Kharkiv</h3>
             <div class="city-info">
@@ -162,7 +164,7 @@
                 sushi-ocean.kh@.com
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-3 anim2 animate__animated animate__bounce">
             <img src="images/kiyev.jpg" alt="Kharkiv picture">
             <h3>Kiyev</h3>
             <div class="city-info">
@@ -178,7 +180,7 @@
                 sushi-ocean.kh@.com
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-3 anim2 animate__animated animate__bounce">
             <img src="images/odessa.jpg" alt="Odessa picture">
             <h3>Odessa</h3>
             <div class="city-info">
@@ -194,7 +196,7 @@
                 sushi-ocean-odessa.kh@.com
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-3 anim2 animate__animated animate__bounce">
             <img src="images/lviv.jpg" alt="Lviv picture">
             <h3>Lviv</h3>
             <div class="city-info">
@@ -214,7 +216,7 @@
     </div>
 </section>
 
-<section class="how-to-order-section">
+<section id="contact-form-section" class="how-to-order-section">
     <div class="position-style">
         <h2>
             We have delivery!
@@ -251,7 +253,7 @@
 
 </section>
 
-<section class="feedback-section">
+<section id="feedback-section" class="feedback-section">
     <h2>100 000 + satisfied visitors :)</h2>
     <div class="float-clearing">
         <div class="col-4">
@@ -308,7 +310,7 @@
     </div>
 </section>
 
-<section class="contact-form-section">
+<section id="contacts" class="contact-form-section">
     <h2>We will be glad to answer your questions</h2>
     <div class="line position-line"></div>
     <div class="contact-form ">
@@ -404,8 +406,8 @@
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript"  src="./scripts/jquery.waypoints.min.js"></script>
+<script src="scripts/jquery-3.6.0.min.js"></script>
+<script src="scripts/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="./scripts/jQuery.js"></script>
 </body>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

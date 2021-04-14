@@ -209,15 +209,16 @@ header {
 }
 
 #sticky-nav {
-position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #f9ba58;
+    z-index: 999;
 }
 
-#sticky-nav  .main-nav li a:link,
-#sticky-nav  .main-nav li a:visited {
+#sticky-nav .main-nav li a:link,
+#sticky-nav .main-nav li a:visited {
     text-decoration: none;
     text-transform: uppercase;
     color: #3f2702;
@@ -339,6 +340,7 @@ Features Styles
     margin-left: 20px;
     margin-right: 20px;
 }
+
 /***********************
 Food  Images Styles
 **************************/
@@ -626,9 +628,18 @@ footer p {
 
 
 /***********************
-Media
- Styles
+Animation Styles
 **************************/
+
+.anim1,
+.anim2 {
+    opacity: 0;
+}
+
+.anim1.animated,
+.anim2.animated {
+    opacity: 1;
+}
 
 
 @media only screen and (max-device-width: 770px) {
@@ -644,6 +655,7 @@ Media
     .phone-image {
         width: 87%;
     }
+
     .position-order-block {
         margin-left: 0px;
     }
@@ -651,9 +663,11 @@ Media
     .app-button img {
         height: 68px;
     }
+
     .app-button-position {
         padding-left: 0px;
     }
+
     .app-wrapper-block {
         text-align: center;
     }
@@ -661,5 +675,19 @@ Media
     .contact-form {
         width: 80%;
         margin: 0 auto;
+    }
+
+    /***********************
+  Media
+   Styles
+  **************************/
+
+    .anim1,
+    .anim2 {
+        opacity: 0;
+    }
+    .anim1 .animated,
+    .anim2 .animated {
+        opacity: 1;
     }
 }
