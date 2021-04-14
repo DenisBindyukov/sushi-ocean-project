@@ -145,6 +145,16 @@ header {
 }
 
 .logo-image {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 60px;
+    width: auto;
+    float: left;
+
+}
+
+#sticky-nav .logo-image {
     position: fixed;
     top: 0;
     left: 0;
@@ -174,7 +184,7 @@ header {
 .main-nav li a:visited {
     text-decoration: none;
     text-transform: uppercase;
-    color: #3f2702;
+    color: #f39809;
     opacity: 0.6;
     transition: opacity 0.5s;
 }
@@ -185,20 +195,20 @@ header {
     border-bottom: 2px solid;
 }
 
-.sticky-nav .main-nav li a:hover,
-.sticky-nav .main-nav li a:active {
+#sticky-nav .main-nav li a:hover,
+#sticky-nav .main-nav li a:active {
     opacity: 1.4;
     border-bottom: 2px solid;
     transition: 0.3s;
 }
 
-.sticky-nav .logo-image {
+#sticky-nav .logo-image {
     position: fixed;
     top: 0;
     left: 0;
 }
 
-.sticky-nav {
+#sticky-nav {
 position: fixed;
     top: 0;
     left: 0;
@@ -206,8 +216,8 @@ position: fixed;
     background-color: #f9ba58;
 }
 
-.sticky-nav  .main-nav li a:link,
-.sticky-nav  .main-nav li a:visited {
+#sticky-nav  .main-nav li a:link,
+#sticky-nav  .main-nav li a:visited {
     text-decoration: none;
     text-transform: uppercase;
     color: #3f2702;
@@ -216,6 +226,15 @@ position: fixed;
 }
 
 .logo-text a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f39809;
+    letter-spacing: 8px;
+    padding-left: 30px;
+    margin-left: 50px;
+}
+
+#sticky-nav .logo-text a {
     text-decoration: none;
     text-transform: uppercase;
     color: #3f2702;
@@ -378,6 +397,7 @@ How To Order Styles
 
 .phone-image {
     width: 500px;
+    height: 706px;
 }
 
 .phone-image-container {
@@ -418,6 +438,10 @@ How To Order Styles
 }
 
 .app-button img {
+    height: 85px;
+}
+
+.app-more img {
     height: 85px;
 }
 
