@@ -79,4 +79,9 @@ $(document).ready(function () {
         offset: 1
     })
 
+// mobile nav
+    $('.mobile-nav-icon').click(function () {
+
+        $('.main-nav').slideToggle(500);
+    });
 })
