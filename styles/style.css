@@ -399,7 +399,7 @@ How To Order Styles
 
 .phone-image {
     width: 500px;
-    height: 706px;
+    height: 664px;
 }
 
 .phone-image-container {
@@ -643,9 +643,7 @@ Animation Styles
     opacity: 1;
 }
 
-.anim1.animated,
-.anim2.animated
-.anim3.animated {
+.anim2.animated {
     /*свойсто которое задаёт скорость появления анимации т.е выезда с боку или её появления.*/
    animation-duration: 0.5s;
 }

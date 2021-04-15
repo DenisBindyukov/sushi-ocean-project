@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
     // Add navBar
-     $('#restaurant-description').waypoint({
-        handler: function(direction) {
+    $('#restaurant-description').waypoint({
+        handler: function (direction) {
             if (direction == 'down') {
                 $("nav").attr('id', "sticky-nav");
             } else {
@@ -12,7 +12,7 @@ $(document).ready(function () {
         offset: 80
     })
 
-      // Animation for click button
+    // Animation for click button
     $('.button-order').click(function () {
         $('html, body').animate({scrollTop: $('.how-to-order-section').offset().top}, 1000);
     });
@@ -55,17 +55,17 @@ $(document).ready(function () {
         });
 
 
-   // Animation Departure of the left block with cities
+    // Animation Departure of the left block with cities
     $('#cities-section').waypoint({
-        handler: function(direction) {
-           $('.anim2').addClass('animated  animate__fadeInRight')
+        handler: function (direction) {
+            $('.anim2').addClass('animated  animate__fadeInRight')
         },
         offset: 1
     })
 
 
     $('#restaurant-description').waypoint({
-        handler: function(direction) {
+        handler: function (direction) {
             $('.anim1').addClass('animated  animate__fadeIn')
         },
         offset: 1
@@ -73,11 +73,10 @@ $(document).ready(function () {
 
 
     $('#contact-form-section').waypoint({
-        handler: function(direction) {
+        handler: function (direction) {
             $('.anim3').addClass('animated  animate__fadeInUp')
         },
         offset: 1
     })
-
 
 })
