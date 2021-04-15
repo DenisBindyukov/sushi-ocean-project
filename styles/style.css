@@ -256,6 +256,21 @@ nav {
     max-width: 33%;
 }
 
+.mobile-nav-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-md-menu {
+    font-size: 200%;
+    color: #f39809;
+}
+
 /***********************
 Button Styles
 **************************/
@@ -645,9 +660,8 @@ Animation Styles
 
 .anim2.animated {
     /*свойсто которое задаёт скорость появления анимации т.е выезда с боку или её появления.*/
-   animation-duration: 0.5s;
+    animation-duration: 0.5s;
 }
-
 
 
 @media only screen and (max-device-width: 770px) {
@@ -685,15 +699,35 @@ Animation Styles
         margin: 0 auto;
     }
 
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .main-nav {
+        float: right;
+        display: none;
+
+    }
+
+    .main-nav li {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+    }
+
     /***********************
   Media
    Styles
   **************************/
-
     .anim1,
     .anim2 {
         opacity: 0;
     }
+
     .anim1 .animated,
     .anim2 .animated {
         opacity: 1;
