@@ -72,4 +72,12 @@ $(document).ready(function () {
     })
 
 
+    $('#contact-form-section').waypoint({
+        handler: function(direction) {
+            $('.anim3').addClass('animated  animate__fadeInUp')
+        },
+        offset: 1
+    })
+
+
 })

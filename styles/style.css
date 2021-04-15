@@ -632,14 +632,24 @@ Animation Styles
 **************************/
 
 .anim1,
-.anim2 {
+.anim2,
+.anim3 {
     opacity: 0;
 }
 
 .anim1.animated,
-.anim2.animated {
+.anim2.animated
+.anim3.animated {
     opacity: 1;
 }
+
+.anim1.animated,
+.anim2.animated
+.anim3.animated {
+    /*свойсто которое задаёт скорость появления анимации т.е выезда с боку или её появления.*/
+   animation-duration: 0.5s;
+}
+
 
 
 @media only screen and (max-device-width: 770px) {
